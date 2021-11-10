@@ -498,7 +498,7 @@ def train(all_predictions,
         correct,
         total))
     
-    return all_predictions
+    return all_predictions.clone().detach()
 
 
 #-------------------------------          
